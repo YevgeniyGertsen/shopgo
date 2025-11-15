@@ -12,7 +12,6 @@ import (
 
 func main() {
 	reader := bufio.NewReader(os.Stdin)
-
 	fmt.Println("1) Добавить товар в корзину")
 	fmt.Println("2) расчет стоимости заказа")
 
@@ -25,4 +24,6 @@ func main() {
 	} else {
 		shop.OrderCost(reader)
 	}
+
+	fmt.Scanln()
 }
